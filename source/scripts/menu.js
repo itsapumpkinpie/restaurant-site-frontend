@@ -1,5 +1,3 @@
-const url = 'http://127.0.0.1:8000/api/v1/menulist';
-
 function itemCardGeneration(item) {
   const cardContainer = document.getElementById("card-container");
   const cardElement = document.createElement("div");
@@ -21,20 +19,24 @@ function itemCardGeneration(item) {
   cardContainer.appendChild(cardElement);
 }
 
-fetch(url)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Ошибка сети: ' + response.status);
-    }
-    return response.json(); // Парсим ответ как JSON
-  })
-  .then(data => {
-    // Обрабатываем данные с сервера, помещаем их в карточки товара
-    data['results'].forEach(item => {
-      itemCardGeneration(item)
+function getData() {
+  const url = 'http://127.0.0.1:8000/api/v1/menulist';
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Ошибка сети: ' + response.status);
+      }
+      return response.json(); // Парсим ответ как JSON
+    })
+    .then(data => {
+      // Обрабатываем данные с сервера, помещаем их в карточки товара
+      data['results'].forEach(item => {
+        itemCardGeneration(item)
+      });
+    })
+    .catch(error => {
+      console.error('Произошла ошибка:', error);
     });
-  })
-  .catch(error => {
-    console.error('Произошла ошибка:', error);
-  });
+}
 
+getData()

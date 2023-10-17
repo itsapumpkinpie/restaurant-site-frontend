@@ -103,6 +103,23 @@ footer {
 	background-color: #8C402E;
 }
 
+/*кнопка все отзывы*/
+.d-grid button {
+	border: none;
+	border-radius: 2;
+	background: #BF8339;
+	width: 25rem;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.d-grid button:hover {
+	background-color: #8C402E;
+}
 
 /*адаптивность*/
 
