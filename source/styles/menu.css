@@ -32,7 +32,36 @@ nav {
     border-color: #8C402E;
 }
 
+.block {
+    background-color: #f0f0f0; /* Задаем цвет фона блока */
+    padding: 10px; /* Добавляем внутренние отступы блоку */
+    width: auto; /* Задаем ширину блока */
+    text-align: center; /* Выравниваем текст по центру внутри блока */
+  }
+
 footer {
     background: #FAFAFA;
     margin-block-start: 40px;
+}
+
+/*PAG*/
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__list {
+  display: flex;
+  list-style-type: none;  
+}
+
+.pagination__item {
+  padding: 8px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.pagination__item--active {
+  font-weight: 800;
+  color: gold;
 }

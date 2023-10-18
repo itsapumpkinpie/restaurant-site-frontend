@@ -30,7 +30,7 @@ function getData() {
     })
     .then(data => {
       // Обрабатываем данные с сервера, помещаем их в карточки товара
-      data['results'].forEach(item => {
+      data.forEach(item => {
         itemCardGeneration(item)
       });
     })

@@ -43,3 +43,41 @@ footer {
     height: 250px;
     background-color: #FAFAFA;
 }
+
+
+
+
+
+/*кнопки пагинации*/
+.btn-primary {
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 20rem;
+    color: #ffffff;
+    background-color: #BF8339;
+    border-color: #BF8339;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #8C402E;
+    border-color: #8C402E;
+}
+
+
+.d-grid button {
+	border: none;
+	border-radius: 2;
+	background: #BF8339;
+	width: 25rem;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.d-grid button:hover {
+	background-color: #8C402E;
+}
