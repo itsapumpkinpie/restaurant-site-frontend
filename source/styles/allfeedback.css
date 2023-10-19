@@ -13,7 +13,6 @@ section {
 }
 
 nav {
-    background-color: #ffffff;
     border-bottom: 1px solid #20242fd2;
 }
 
@@ -44,10 +43,6 @@ footer {
     background-color: #FAFAFA;
 }
 
-
-
-
-
 /*кнопки пагинации*/
 .btn-primary {
     margin-top: 30px;
@@ -64,20 +59,19 @@ footer {
     border-color: #8C402E;
 }
 
-
 .d-grid button {
-	border: none;
-	border-radius: 2;
-	background: #BF8339;
-	width: 25rem;
-	color: #fff;
-	padding: 15px 0;
-	display: inline-block;
-	font-size: 16px;
-	margin-top: 20px;
-	cursor: pointer;
+    border: none;
+    border-radius: 2;
+    background: #BF8339;
+    width: 25rem;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .d-grid button:hover {
-	background-color: #8C402E;
+    background-color: #8C402E;
 }
