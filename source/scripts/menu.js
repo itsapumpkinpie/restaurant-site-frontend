@@ -9,9 +9,7 @@ function itemCardGeneration(item) {
           <img src="${item.photo_path}" class="card-img-top" alt="Тут должна быть пицца">
             <div class="card-body">
               <h5 class="card-title">${item.dish_name}</h5>
-              <p class="card-text">Небольшой пример текста, который должен основываться на
-                названии
-                карточки и составлять основную часть содержимого карты.</p>
+              <p class="card-text">${item.dish_description}</p>
               <a href="#" class="btn btn-primary">Выбрать</a>
             </div>
         </div>

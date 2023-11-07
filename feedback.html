@@ -8,10 +8,10 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="source/styles/feedback.css">
     <script src="source/scripts/feedback.js" defer></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="source/favicon//apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="source/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="source/favicon//favicon-16x16.png">
-    <link rel="manifest" href="source/favicon//site.webmanifest">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/favicon/favicon-16x16.png">
+    <link rel="manifest" href="source/favicon/site.webmanifest">
     <title>Отзывы о пиццерии Верона</title>
 
 </head>
@@ -65,12 +65,16 @@
                                 <div class="mb-3">
                                     <label for="user_email" class="form-label">Ваш email-адрес</label>
                                     <input type="email" class="form-control" name="user_email"
-                                        aria-describedby="emailHelp" required>
+                                        aria-describedby="emailHelp" value="fakeemail@gmail.com" readonly>
                                 </div>
                                 <div class="mb-3">
                                     <label for="content" class="form-label">Отзыв</label>
                                     <textarea type="text" class="form-control" name="content" required></textarea>
                                 </div>
+                                <label>
+                                    <input type="checkbox" name="privacy_policy" value="yes" required>
+                                    Я согласен(согласна) с тем, что администрация сайта не несёт ответственность за оставленные мной данные.
+                                </label>
                                 <button type="submit" class="btn btn-primary" id="submit">Отправить</button>
                             </form>
                         </div>
