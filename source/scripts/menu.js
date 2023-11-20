@@ -1,9 +1,11 @@
 function itemCardGeneration(item) {
+
   const cardContainer = document.getElementById("card-container");
   const cardElement = document.createElement("div");
   cardElement.classList.add("col-lg-4");
   cardElement.classList.add("col-md-6");
   cardElement.classList.add("mt-4");
+
   cardElement.innerHTML = `
         <div class="card">
           <img src="${item.photo_path}" class="card-img-top" alt="Тут должна быть пицца">
@@ -19,6 +21,7 @@ function itemCardGeneration(item) {
 
 function getData() {
   const url = 'http://127.0.0.1:8000/api/v1/menulist';
+  
   fetch(url)
     .then(response => {
       if (!response.ok) {

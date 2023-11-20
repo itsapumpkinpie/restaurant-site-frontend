@@ -28,7 +28,7 @@ function itemCardGeneration(item) {
 }
 
 
-function loadData(url) {
+function loadData(url, ) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -68,6 +68,5 @@ function loadData(url) {
             console.error('Произошла ошибка:', error);
         });
 }
-
 
 loadData(apiURL);
